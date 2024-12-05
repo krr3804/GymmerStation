@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="267.0"
+      prefWidth="400.0" stylesheets="@../cssFiles/log-in.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gymmer.gymmerstation.home.LoginController">
+   <children>
+      <Label fx:id="loginTxt" prefWidth="51.0" text="LOGIN">
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin></Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="USER ID :" />
+            <TextField fx:id="userId" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin></TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets left="82.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="PASSWORD :" />
+            <PasswordField fx:id="password">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </PasswordField>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="82.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="82.0" prefWidth="400.0">
+         <children>
+            <Button fx:id="btnExit" mnemonicParsing="false" text="Exit">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin></Button>
+            <Button fx:id="btnLogIn" mnemonicParsing="false" text="Log In">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="askNewTxt" text="Are You New?" />
+            <Button fx:id="btnMoveToRegister" mnemonicParsing="false" prefHeight="23.0" prefWidth="61.0" text="Register" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

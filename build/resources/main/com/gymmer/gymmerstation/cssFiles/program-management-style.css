@@ -1,0 +1,59 @@
+.root {
+    -fx-font-family : "Arial";
+    -fx-background-image : url("../images/background.jpg");
+    -fx-background-repeat : no-repeat;
+    -fx-background-size : 600 400;
+    -fx-background-position : center center;
+}
+
+.text-field {
+    -fx-alignment : center;
+    -fx-font-size : 14;
+}
+
+.button {
+    -fx-background-color : linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-border-radius : 80%;
+    -fx-text-fill : white;
+    -fx-font-size : 14;
+    -fx-effect : dropshadow( three-pass-box, rgba(0,0,0,0.6), 5, 0.0, 0, 1 );
+}
+
+#btnAddDivision, #btnRemoveDivision {
+    -fx-font-size : 12;
+}
+
+.button:hover {
+    -fx-background-color : linear-gradient(#328BDB 100%, #207BCF 75%, #1973C9 25%, #0A65BF 0%);
+}
+
+#registerTxt {
+    -fx-font-weight : bold;
+    -fx-font-size : 24;
+}
+
+.label {
+    -fx-font-size : 14;
+    -fx-text-fill : midnightblue;
+    -fx-font-weight : bold;
+}
+
+.list-cell {
+    -fx-font-family : sans-serif;
+    -fx-font-size : 14;
+    -fx-text-fill : midnightblue;
+    -fx-alignment : center;
+}
+
+.list-cell:filled:selected:focused {
+    -fx-background-color : linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-text-fill : white;
+    -fx-underline : false;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color : #0093ff;
+    -fx-text-fill : white;
+    -fx-underline : true;
+}
+

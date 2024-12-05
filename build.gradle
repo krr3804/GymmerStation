@@ -24,7 +24,7 @@ tasks.withType(JavaCompile) {
 
 application {
     mainModule = 'com.gymmer.gymmerstation'
-    mainClass = 'com.gymmer.gymmerstation.HelloApplication'
+    mainClass = 'com.gymmer.gymmerstation.Main'
 }
 
 javafx {
@@ -36,6 +36,8 @@ dependencies {
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
+
 }
 
 test {

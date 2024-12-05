@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox prefHeight="400.0" prefWidth="600.0" stylesheets="@../cssFiles/program-management-style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gymmer.gymmerstation.programManagement.ProgramEditController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="362.0">
+         <children>
+            <HBox prefHeight="44.0" prefWidth="314.0">
+               <children>
+                  <Label text="Name :" />
+                  <TextField fx:id="inpName" prefHeight="53.0" prefWidth="228.0">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="205.0" prefWidth="314.0">
+               <children>
+                  <Label text="Purpose :" />
+                  <TextArea fx:id="inpPurpose" prefHeight="196.0" prefWidth="228.0">
+                     <HBox.margin>
+                        <Insets left="14.0" />
+                     </HBox.margin>
+                  </TextArea>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+            <HBox />
+         </children>
+         <padding>
+            <Insets left="20.0" right="29.0" />
+         </padding>
+         <HBox.margin>
+            <Insets top="20.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="335.0" prefWidth="178.0">
+         <children>
+            <HBox prefHeight="44.0" prefWidth="178.0">
+               <children>
+                  <Label text="Length :" />
+                  <TextField fx:id="inpLength" prefHeight="42.0" prefWidth="56.0">
+                     <HBox.margin>
+                        <Insets left="28.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="44.0" prefWidth="178.0">
+               <children>
+                  <Label prefHeight="16.0" prefWidth="73.0" text="Division :">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ListView fx:id="divisionListView" prefHeight="42.0" prefWidth="56.0">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor></ListView>
+                  <VBox>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <Button fx:id="btnAddDivision" prefHeight="22.0" prefWidth="24.0" text="+" />
+                        <Button fx:id="btnRemoveDivision" prefHeight="22.0" prefWidth="24.0" text="-" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="140.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="btnSave" text="Save" />
+                  <Button fx:id="btnExit" text="Return">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <HBox.margin>
+            <Insets right="20.0" top="20.0" />
+         </HBox.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</HBox>

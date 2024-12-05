@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../cssFiles/program-management-style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gymmer.gymmerstation.performanceArchive.PerformanceArchiveListController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="38.0" prefWidth="560.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="38.0" prefWidth="81.0" text="In Progress">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="38.0" prefWidth="68.0" text="Complete">
+               <HBox.margin>
+                  <Insets left="164.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="251.0" prefWidth="540.0">
+         <children>
+            <ListView fx:id="programListInProgress" prefHeight="197.0" prefWidth="290.0" />
+            <ListView fx:id="programListTerminated" prefHeight="198.0" prefWidth="290.0">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </ListView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="44.0" prefWidth="540.0">
+         <children>
+            <Button fx:id="btnReturn" mnemonicParsing="false" text="Return">
+               <HBox.margin>
+                  <Insets right="90.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnDelete" mnemonicParsing="false" text="Delete">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnView" mnemonicParsing="false" text="View">
+               <HBox.margin>
+                  <Insets left="90.0" />
+               </HBox.margin></Button>
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+   </padding>
+</VBox>

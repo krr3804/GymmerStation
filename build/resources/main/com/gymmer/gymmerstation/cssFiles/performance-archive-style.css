@@ -1,0 +1,41 @@
+.root {
+    -fx-font-family : "Arial";
+    -fx-background-image : url("../images/background.jpg");
+    -fx-background-repeat : no-repeat;
+    -fx-background-size : 600 400;
+    -fx-background-position : center center;
+}
+
+.button {
+    -fx-background-color : linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-border-radius : 80%;
+    -fx-text-fill : white;
+    -fx-font-size : 14;
+    -fx-effect : dropshadow( three-pass-box, rgba(0,0,0,0.6), 5, 0.0, 0, 1 );
+}
+
+.button:hover {
+    -fx-background-color : linear-gradient(#328BDB 100%, #207BCF 75%, #1973C9 25%, #0A65BF 0%);
+}
+
+#programName {
+    -fx-font-size : 14;
+    -fx-text-fill : midnightblue;
+    -fx-font-weight : bold;
+}
+
+.table-view .column-header {
+   -fx-text-fill : midnightblue;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: midnightblue;
+
+}
+
+.table-column {
+    -fx-alignment : center;
+}
+
+
+

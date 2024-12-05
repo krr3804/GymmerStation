@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gymmer.gymmerstation.programOperation.ProgramOperationServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-16T07:49:56" hostname="DESKTOP-D3DODB7" time="0.592">
+  <properties/>
+  <testcase name="getPerformanceDataList()" classname="com.gymmer.gymmerstation.programOperation.ProgramOperationServiceImplTest" time="0.592"/>
+  <system-out><![CDATA[Connection Success!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

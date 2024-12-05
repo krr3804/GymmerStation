@@ -1,0 +1,34 @@
+.root {
+    -fx-font-family : "Arial Black";
+    -fx-background-image : url("../images/background.jpg");
+    -fx-background-repeat : no-repeat;
+    -fx-background-size : 600 400;
+    -fx-background-position : center center;
+}
+
+#logo {
+    -fx-padding : 20,0,0,0;
+}
+
+#logoTxt {
+    -fx-font-size : 52;
+    -fx-fill : linear-gradient(to bottom, darkblue, whitesmoke);
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+.button {
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+    -fx-font-size : 16;
+    -fx-background-color : rgba(0,0,0,0);
+    -fx-text-fill : grey
+}
+
+.button:hover {
+    -fx-text-fill : radial-gradient(center 50% 50%, radius 50%, grey, lightgrey);
+}
+
+#btnLogout {
+    -fx-font-size : 12;
+    -fx-text-fill : black;
+    -fx-effect : none;
+}

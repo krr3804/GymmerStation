@@ -1,0 +1,54 @@
+.root {
+    -fx-font-family : "Arial";
+    -fx-background-image : url("../images/background.jpg");
+    -fx-background-repeat : no-repeat;
+    -fx-background-size : 600 400;
+    -fx-background-position : center center;
+}
+
+.text-field {
+    -fx-alignment : center;
+    -fx-font-size : 12;
+}
+
+.button {
+    -fx-background-color : linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-border-radius : 80%;
+    -fx-text-fill : white;
+    -fx-font-size : 12;
+    -fx-effect : dropshadow( three-pass-box, rgba(0,0,0,0.6), 5, 0.0, 0, 1 );
+}
+
+.button:hover {
+    -fx-background-color : linear-gradient(#328BDB 100%, #207BCF 75%, #1973C9 25%, #0A65BF 0%);
+}
+
+#loginTxt {
+    -fx-font-weight : bold;
+    -fx-font-size : 16;
+}
+
+.label {
+    -fx-font-size : 12;
+    -fx-text-fill : midnightblue;
+    -fx-font-weight : bold;
+}
+
+#askNewTxt {
+    -fx-font-weight : normal;
+}
+
+#btnMoveToRegister {
+    -fx-background-color : transparent;
+    -fx-font-size : 12;
+    -fx-text-fill : midnightblue;
+    -fx-effect : none;
+}
+
+#btnMoveToRegister:hover {
+    -fx-background-color : transparent;
+    -fx-cursor : hand;
+}
+
+
+

@@ -1,0 +1,11 @@
+.root {
+    -fx-font-family : sans-serif;
+}
+
+.dialog-pane:header *.header-panel {
+    -fx-font-size : 18;
+}
+
+.dialog-pane > *.label.content {
+    -fx-font-size : 14;
+}
